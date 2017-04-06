@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-var streamers = ["ESL_SC2", "freecodecamp", "xPeke", "rivalxfactor", "boxbox", "Scarra", "IWillDominate"];
+var streamers = ["ESL_SC2", "freecodecamp", "xPeke", "Doublelift", "boxbox", "Scarra", "IWillDominate", "Gosu"];
 
 $.each(streamers, function(i, val) {
 	var url = "https://wind-bow.gomix.me/twitch-api/streams/" + val + "?callback=?";

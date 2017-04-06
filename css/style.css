@@ -1,5 +1,5 @@
 body, html {
-  background-color: blue !important;
+  background-color: #574E6D !important;
   color: white !important; }
 
 img {
@@ -7,21 +7,39 @@ img {
   max-width: 80px;
   max-height: 80px; }
 
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Inconsolata", monospace !important;
+  font-size: 700% !important; }
+
+h2 {
+  font-family: "Inconsolata", monospace !important;
+  letter-spacing: 2px; }
+
 .row {
   padding: 5px;
   line-height: 50px; }
 
 .display {
-  background-color: green; }
+  background-color: #4B586E;
+  font-family: "Inconsolata", monospace; }
 
 .display a {
   color: white; }
 
-h1 {
-  text-transform: uppercase;
-  text-align: center; }
-
 .offline-display {
-  background-color: black; }
+  background-color: #43405D;
+  min-width: 100%;
+  font-family: "Inconsolata", monospace; }
+
+#top-container {
+  padding-top: 4%; }
+
+#bottom-container {
+  padding-bottom: 1%; }
+
+a:hover {
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
