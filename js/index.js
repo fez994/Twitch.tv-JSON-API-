@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-var streamers = ["ESL_SC2", "freecodecamp", "xPeke", "Doublelift", "boxbox", "Scarra", "IWillDominate", "Gosu"];
+var streamers = ["ESL_SC2", "freecodecamp", "xPeke", "Doublelift", "boxbox", "Scarra", "IWillDominate", "Gosu",];
 
 $.each(streamers, function(i, val) {
 	var url = "https://wind-bow.gomix.me/twitch-api/streams/" + val + "?callback=?";
@@ -63,8 +63,9 @@ function offline(data) {
 	var url = data.url;
 	var game = "Offline";
 	var description = data.description;
+	var message = "This channel does not exsist";
 
-
+	// displaying data
 	var displayOfflineData = '<div class="row ' + 
           status + '"><div class="col-xs-2 col-md-1"><img src="' + 
           logo + '" class="img-responsive"></div><div class="col-xs-7 col-md-3" id="name"><a href="' + 
@@ -72,13 +73,15 @@ function offline(data) {
           name + '</a></div><div class="col-xs-3 col-md-8">'+ 
           game + '</div></div>';
 
-
-     $('.offline-display').append(displayOfflineData);
+    
+     	$('.offline-display').append(displayOfflineData);
 
 
 
 	console.log(data);
 }
+
+
 
 
 
